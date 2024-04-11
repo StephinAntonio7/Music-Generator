@@ -1,17 +1,43 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Outlet } from 'react-router-dom'
+import Navbar from './Navbar'
+
 
 function App() {
 
   return (
-      <div>
-       <h1>OMG its a project!</h1>
-      </div>
+    <div>
+
+    <Navbar />
+
+    <h1>What's the Vibes?</h1>
+
+    <Outlet />
+
+  </div>
+
   )
 }
 
-export default App
+export default App;
+
+
+    // <div className="App">
+  
+    // <h1>Playlist Generator</h1>
+
+    // <div className="grid with-sidebar">
+
+    // <div className="flex-container">
+    // <PlaylistsContainer playlists={playlists} setPlaylists={setPlaylists}/>
+    // </div>
+
+    // <div className="sidebar">
+    // <PlaylistForm setPlaylists={setPlaylists}/>
+    // </div>
+
+// </div>
+
+// </div>
 
 // routing --> multiple pages
 

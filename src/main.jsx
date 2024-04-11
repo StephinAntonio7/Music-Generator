@@ -1,13 +1,23 @@
+// REACT
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+
+// COMPONENTS
 import App from './components/App.jsx'
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
+import Playlist from './components/Playlist'
+import PlaylistItem from './components/PlaylistItem'
+import Bio from './components/Bio'
+
+// CSS
 import './index.css'
-import Home from './components/Home.jsx'
-import About from './components/About.jsx'
-import Navbar from './components/Navbar.jsx'
-import Navbar from './components/PortfolioItem.jsx'
+
+// REACT-ROUTER-DOM
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
+// ROUTES
 const routes = [
   {
     path: "/",
@@ -22,12 +32,12 @@ const routes = [
         element: <About />,
         children: [
           {
-            path: 'portfolio',
-            element: <Portfolio />
+            path: 'playlist',
+            element: <Playlist />
           },
           {
-            path: 'portfolio/:id',
-            element: <PortfolioItem />
+            path: 'playlist/:id',
+            element: <PlaylistItem />
           },
           {
             path: 'bio',
@@ -43,12 +53,14 @@ const routes = [
   }
 ]
 
+// ROUTER
 const router = createBrowserRouter(routes)
 
+// RENDER
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-    <App />
-    </RouterProvider>
+
+    <RouterProvider router={router} />
+
   </React.StrictMode>,
 )

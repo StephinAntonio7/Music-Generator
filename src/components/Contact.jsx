@@ -1,9 +1,7 @@
 function Contact() {
 
     return (
-        <div>
-         <h1>OMG</h1>
-        </div>
+         <h1>Contact me at stephin.roberts@gmail.com</h1>
     )
   }
   

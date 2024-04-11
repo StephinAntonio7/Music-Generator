@@ -1,12 +1,25 @@
 {
-    "portfolios": [
-        {
-            "id": 1
-            
-        }
-
-
-
-        
+    "playlists": [
+      {
+        "id": "1",
+        "genre": "Billboard Hot 10",
+        "description": "The Top 10 Most Popular Songs Across All Genres",
+        "vibe": "Party",
+        "image_url": "https://media.pitchfork.com/photos/65f9ba5e7f6a6f4c6c74a9d8/master/pass/Beyonce-Cowboy-Carter.jpg"
+      },
+      {
+        "id": "2",
+        "genre": "Hip-Hop",
+        "description": "Hip-Hop Hits",
+        "vibe": "Uptempo",
+        "image_url": "https://media.pitchfork.com/photos/65fda3889fec61dfef2cdc8b/1:1/w_450%2Cc_limit/Like%2520Thaty.jpeg"
+      },
+      {
+        "id": "3",
+        "genre": "R&B",
+        "description": "R&B Now",
+        "vibe": "Chill",
+        "image_url": "https://highlifeng.com/africa/wp-content/uploads/2024/03/SiR-%E2%80%93-BRIGHTER.webp"
+      }
     ]
-}
+  }
